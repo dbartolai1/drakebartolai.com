@@ -1,2 +1,2 @@
 # drakebartolai.com
-- The course code for my website!
+- The source code for my website!
