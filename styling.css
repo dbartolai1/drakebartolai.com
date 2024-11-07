@@ -41,11 +41,8 @@
 }
 
 body{
-<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
-=======
     font-family: 'Roboto';
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
     font-weight: 100;
     background-color: rgb(7, 7, 7);
     overflow: hidden;
@@ -67,15 +64,14 @@ body{
     padding-right: 40px
 }
 
-<<<<<<< HEAD
 .sidebar-button{
     border: none;
     background-color: rgb(25, 25, 25);
-=======
+}
+
 .sidebar-section button{
     background-color: rgb(25, 25, 25);
     border: none;
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
     color: white;
     font-size: small;
     font-weight: 400;
@@ -83,7 +79,6 @@ body{
     padding-bottom: 8px;
     padding-left: 10px;
     margin-right: 40px;
-<<<<<<< HEAD
     margin-bottom: 2px;
     width: 100%;
     display: flex;
@@ -93,14 +88,6 @@ body{
     border: none;
     background-color: rgb(80, 80, 80);
     border-radius: 8px;
-=======
-    width: 100%;
-}
-
-.sidebar-button{
-    background-color: rgb(25, 25, 25);
-    border: none;
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
     color: white;
     font-size: small;
     font-weight: 400;
@@ -112,15 +99,6 @@ body{
     display: flex;
 }
 
-<<<<<<< HEAD
-=======
-.page{
-    color: rgb(200, 200, 200);
-    display: flex;
-    justify-content: center;
-}
-
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
 .name-div{
     display: flex;
     padding-top: 20px;
@@ -134,14 +112,11 @@ body{
     font-size: medium;
 }
 
-<<<<<<< HEAD
 .name:hover{
     cursor: pointer;
     color: rgb(200, 200, 200);
 }
 
-=======
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
 .sidebar-section{
     padding-left: 20px;
     margin-top: 10px;
@@ -185,7 +160,6 @@ body{
     font-size: medium;
     margin-bottom: 15px;
     margin-top: 30px;
-<<<<<<< HEAD
 }
 
 .page{
@@ -210,6 +184,4 @@ body{
 
 .page-content{
     margin-bottom: 20px;
-=======
->>>>>>> b2085caebac91791c135902db56cd9459ac7185e
 }
