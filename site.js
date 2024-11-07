@@ -19,7 +19,7 @@ function setButton(activeButton){
     }
 }
 
-setButton(activeButton);
+setButton('homeButton');
 
 for (let i=0; i<buttons.length; i++){
     buttonDict[buttonNames[i]] = buttons[i];
@@ -45,6 +45,9 @@ function homeButton(){
         <p class="page-content">
         I'd also like to expand on ClassMate. Currently, it works as a low level gradebook, and functions a lot more like a utility than a full blown app. I envision expanding it into a full blown school planner. It could track your grades with all the same functionality it currently has, and also allows you to plan your schedule, set due dates, and study using spaced repitition.
         </p>
+        <p class="page-content">
+        Welcome to my website! I hope you enjoy :)
+        <p>
     `
 }
 
