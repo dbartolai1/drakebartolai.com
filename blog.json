@@ -1,17 +1,7 @@
 [
-    {
-      "title": "Welcome to My Blog",
-      "date": "2024-11-01",
-      "content": "This is the first post on my blog. I'll be sharing insights on web development, programming, and my projects! I can't wait to make more posts and share my thoughts with the world!"
-    },
-    {
-      "title": "Learning Async JavaScript",
-      "date": "2024-11-03",
-      "content": "Today, I dove into asynchronous JavaScript concepts. Promises and async/await have changed how I handle asynchronous code."
-    },
-    {
-      "title": "New Project: Raspberry Pi Car",
-      "date": "2024-11-05",
-      "content": "I'm building a Raspberry Pi-powered car that maps out rooms using SLAM. Stay tuned for updates on its progress!"
-    }
+  {
+    "title": "Welcome!",
+    "date": "November 10, 2024",
+    "content": ["Welcome to my website, and my very first blog post! I'm Drake, and I hope you learned a little bit about me from my home page. Here in the blog section of my website, I'd like to share about what I'm working on, what I'm learning, and my thoughts on the software and tech spaces in general. I hope that through this, visitors of my website get to learn a bit more about me as a person. I think it's important to have a presence online that goes deeper than your work, and this is my attempt at starting that for myself!", "Two to three times each week, I'll come here to think out loud to whoever would like to listen. Currently, my infrastructure is nothing fancy. I'm typing into a file called blog.json in VSCode. You can even add '/blog.json' to the domain name to see all of my posts in json format, if you'd like to do thaty for whatever reason. Each paragraph is just a string in an array. Once I make things a bit more robust, I'll create some kind of content management system. For now though, this gets the job done quite nicely, and I don't even mind writing this way. It keeps all of the distractions away.", "As for the rest of my website, it's all native. Everything is done purely in HTML, CSS, and JS. I like it this way, and I don't really need much more. I have one html file, which links to a script that updates the page content as necessary. When you click a button, the script applies a class that rounds the corners and changes the background color. That's really all there is to it, but I'm really happy with how it's turning out. The sidebar website design is super appealing to me; I especially like it's implementation in apps like Notion. My vision was to have a website that somewhat resembed a Finder window on MacOS, where everything lives in different folders. That method of organization makes a lot of sense to me, and as I continue to build out more projects, I think that will become quite apparent in the way I go about my designs.", "That's all for today, but I'd like to sincerely thank you for coming to my website. Go ahead and add this to your bookmarks bar, and come back in a week or two for some more posts!"]
+  }
 ]

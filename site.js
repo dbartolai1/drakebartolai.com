@@ -59,8 +59,8 @@ buttonDict['homeButton'].addEventListener('click', function () {
 
 
 //BLOG PAGE FUNCTIONALITY
-function postPreview(content){
-    const words = content.split(' ');
+function postPreview(postContent){
+    const words = postContent.split(' ');
     const preview = words.slice(0, 40);
     if (words.length > 40) return preview.join(' ') + '...';
     else return preview.join(' ');
@@ -103,14 +103,20 @@ buttonDict['blogButton'].addEventListener('click', function () {
                 blogPostDateDiv.appendChild(blogPostDate);
                 
                 //CREATE POST CONTENT
-                const blogPostContent = document.createElement('p');
-                blogPostContent.appendChild(document.createTextNode(postPreview(data[i].content)))
-                blogPost.appendChild(blogPostContent);
-
                 page.insertAdjacentElement('beforeend', blogPost);
+                const blogPostContent = document.createElement('p');
+                blogPostContent.appendChild(document.createTextNode(postPreview(data[i].content[0])))
+                blogPost.appendChild(blogPostContent);
                 blogPost.addEventListener('click', function () {
+                    page.innerHTML='';
                     console.log(data[i].title, 'click');
-                    page.innerHTML=data[i].content;
+                    for (let j = 0; j<data[i].content.length; j++){
+                        const content = data[i].content[j];
+                        const textBlock = document.createElement('p');
+                        textBlock.appendChild(document.createTextNode(content));
+                        textBlock.classList.add('page-content')
+                        page.appendChild(textBlock);
+                    }
                     header.innerHTML = data[i].title;
                     header.appendChild(blogPostDateDiv);
                 })
