@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Welcome to My Blog",
+      "date": "2024-11-01",
+      "content": "This is the first post on my blog. I'll be sharing insights on web development, programming, and my projects! I can't wait to make more posts and share my thoughts with the world!"
+    },
+    {
+      "title": "Learning Async JavaScript",
+      "date": "2024-11-03",
+      "content": "Today, I dove into asynchronous JavaScript concepts. Promises and async/await have changed how I handle asynchronous code."
+    },
+    {
+      "title": "New Project: Raspberry Pi Car",
+      "date": "2024-11-05",
+      "content": "I'm building a Raspberry Pi-powered car that maps out rooms using SLAM. Stay tuned for updates on its progress!"
+    }
+]

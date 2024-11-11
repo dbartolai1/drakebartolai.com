@@ -182,6 +182,49 @@ body{
     color: white;
 }
 
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .page-content{
     margin-bottom: 20px;
+}
+
+.blog-post{
+    border-top: solid rgb(100, 100, 100) 1px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blog-post:last-child{
+    border-bottom: solid rgb(100, 100, 100) 1px;
+}
+
+.blog-post:hover{
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+}
+
+.blog-post-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.blog-post-title{
+    color: white;
+}
+
+.blog-post-date-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-post-date{
+    font-size: medium;
+    color: white
 }

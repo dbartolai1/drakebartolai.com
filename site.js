@@ -59,11 +59,64 @@ buttonDict['homeButton'].addEventListener('click', function () {
 
 
 //BLOG PAGE FUNCTIONALITY
+function postPreview(content){
+    const words = content.split(' ');
+    const preview = words.slice(0, 40);
+    if (words.length > 40) return preview.join(' ') + '...';
+    else return preview.join(' ');
+}
+
 buttonDict['blogButton'].addEventListener('click', function () {
-    header.innerHTML = 'Blog'
-    page.innerHTML = `
-    
-    `
+    header.innerHTML = 'Blog';
+    page.innerHTML='';
+    fetch('blog.json')
+        .then(response => response.json())
+        .then(data => {
+            for(let i=0; i<data.length; i++){
+
+                //CREATE POST
+                const blogPost = document.createElement('div');
+                blogPost.classList.add('blog-post');
+
+                //CREATE POST INFO DIV
+                const blogPostInfo = document.createElement('div');
+                blogPostInfo.classList.add('blog-post-info');
+                blogPost.appendChild(blogPostInfo);
+
+                //CREATE POST TITLE
+                const blogPostTitle = document.createElement('h2');
+                blogPostTitle.classList.add('blog-post-title');
+                const blogPostTitleText = document.createTextNode(data[i].title);
+                blogPostTitle.appendChild(blogPostTitleText);
+                blogPostInfo.appendChild(blogPostTitle);
+
+                //CREATE POST DATE DIV
+                const blogPostDateDiv = document.createElement('div');
+                blogPostDateDiv.classList.add('blog-post-date-div');
+                blogPostInfo.appendChild(blogPostDateDiv);
+
+                //CREATE POST DATE
+                const blogPostDate = document.createElement('h2');
+                blogPostDate.classList.add('blog-post-date');
+                const blogPostDateText = document.createTextNode(data[i].date);
+                blogPostDate.appendChild(blogPostDateText);
+                blogPostDateDiv.appendChild(blogPostDate);
+                
+                //CREATE POST CONTENT
+                const blogPostContent = document.createElement('p');
+                blogPostContent.appendChild(document.createTextNode(postPreview(data[i].content)))
+                blogPost.appendChild(blogPostContent);
+
+                page.insertAdjacentElement('beforeend', blogPost);
+                blogPost.addEventListener('click', function () {
+                    console.log(data[i].title, 'click');
+                    page.innerHTML=data[i].content;
+                    header.innerHTML = data[i].title;
+                    header.appendChild(blogPostDateDiv);
+                })
+            }
+        })
+        .catch(error => console.error('Error fetching blog posts:', error));
 })
 
 //TUTOR PAGE FUNCTIONALITY
