@@ -3,7 +3,7 @@ console.log('Hello World!');
 const page = document.querySelector('.page-content-div');
 const header = document.querySelector('.page-header');
 const buttons = document.querySelectorAll('.sidebar-button');
-const buttonNames = ['homeButton', 'blogButton', 'tutorButton', 'wordleButton', 'classmateButton', 'calcButton'];
+const buttonNames = ['homeButton', 'blogButton', 'tutorButton', 'wordleButton', 'calcButton'];
 const buttonDict = {};
 let activeButton = 'homeButton';
 
@@ -127,23 +127,29 @@ buttonDict['blogButton'].addEventListener('click', function () {
 
 //TUTOR PAGE FUNCTIONALITY
 buttonDict['tutorButton'].addEventListener('click', function () {
-    header.innerHTML = 'Tutoring'
-    page.innerHTML = `
+    header.innerHTML = 'Tutoring';
+    page.innerHTML = '';
+    const tutorParagraph = document.createElement('div');
+    page.appendChild(tutorParagraph);
     
-    `
+    const tutorParagraph1 = document.createElement('p');
+    tutorParagraph1.classList.add('page-content');
+    tutorParagraph1.appendChild(document.createTextNode(`
+        For about four years now I've been running my tutoring business, and I'm proud to be able to say that all of my clients have reached their goal with my assistance. Students I've worked with have passed exams in AP Physics, Math, Chemistry, History, and more. I've also had people get accepted into high schools all across Chicago such as St. Ignatius, Lane Tech, and DePaul College Prep. Recently, since I've moved into the SAT and ACT space, other clients of mine have been accepted to Case Western Reserve, University of Illinois, and the list keeps on growing as this year's class continues to get acceptance letters.
+    `));
+    tutorParagraph.appendChild(tutorParagraph1);
+
+    const tutorParagraph2 = document.createElement('p');
+    tutorParagraph2.classList.add('page-content');
+    tutorParagraph2.appendChild(document.createTextNode(`
+        If you're here to inquire about my business, please feel free to hit the button in the bottom left and shoot me a quick email. If you have a positive reference, please do the same and I will post your review here! 
+    `));
+    tutorParagraph.appendChild(tutorParagraph2);
 })
 
 //WORDLE PAGE FUNCTIONALITY
 buttonDict['wordleButton'].addEventListener('click', function () {
     header.innerHTML = 'Wordle'
-    page.innerHTML = `
-    
-    `
-})
-
-//CLASSMATE PAGE FUNCTIONALITY
-buttonDict['classmateButton'].addEventListener('click', function () {
-    header.innerHTML = 'ClassMate'
     page.innerHTML = `
     
     `
