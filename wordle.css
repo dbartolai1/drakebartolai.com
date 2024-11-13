@@ -1,0 +1,58 @@
+body{
+    background-color: #2b2b2b;
+}
+
+html {
+    font-family: Arial, sans-serif;
+}
+
+.header h1{
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    width: 500px;
+}
+
+.game-window{
+    height: 80vh;
+}
+
+.row{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 12.5%;
+}
+
+.letter-box{
+    width: 90px;
+    border: solid rgb(170, 170, 170) 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.letter-wrong{
+    background-color: #696969;
+}
+
+.letter-yellow{
+    background-color: #c2a225;
+}
+
+.letter-correct{
+    background-color: #578344;
+}
